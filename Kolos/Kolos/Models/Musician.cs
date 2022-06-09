@@ -17,7 +17,7 @@ namespace Kolos.Models
         [Required]
         [MaxLength(20)]
         public string NickName { get; set; }
-        public ICollection<Musician_Track> Musician_Track { get; set; }
+        public ICollection<Track> Track { get; set; }
 
     }
 }

@@ -15,6 +15,6 @@ namespace Kolos.Models
         public float Duration { get; set; }
         [Required]
         public ICollection<Album> IdMusicAlbum { get; set; }
-        public ICollection<Musician_Track> Musician_Track { get; set; }
+        public ICollection<Musician> Musician { get; set; }
     }
 }

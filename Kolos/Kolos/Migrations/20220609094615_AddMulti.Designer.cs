@@ -4,14 +4,16 @@ using Kolos.DataAcces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Kolos.Migrations
 {
     [DbContext(typeof(PjatkDbContext))]
-    partial class PjatkDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220609094615_AddMulti")]
+    partial class AddMulti
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
